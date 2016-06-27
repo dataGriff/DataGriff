@@ -44,7 +44,7 @@ INFO Start blogging with hexo
 ```
 So I thought I must be on the right track!
 
-![HexoStartBlogging](/images/HexoStartBlogging.png)))
+![Hexo Start Blogging](/images/HexoStartBlogging.png)))
 
 ## Viewing Hexos Startup Template
 In command prompt, in my dataGriff directory, I typed
@@ -59,4 +59,4 @@ So with trepidation I went to the http://localhost:4000/ link in a browser and..
 Hey presto! I could see hexos startup template! Success!
 To stop the page running you can just press CTRL+C in the command prompt and confirm the termination.
 
-![HexoDefault](/images/HexoDefault.png)
+![Hexo Default Startup Page](/images/HexoDefault.png)

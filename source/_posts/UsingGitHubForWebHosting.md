@@ -19,6 +19,6 @@ If you have a custom domain you want to use then you need to go to settings of y
 
 **Important Note:** In order for this CNAME file to persist, you should create it in your local output folder (with no file name extension), with the name of your custom domain. I found that if I didn't do this everytime I pushed from my local folder the CNAME file would disappear and the connection from my github URL to my custom domain would disappear and I'd get a 404 error, so be aware of this!
 
-![CNAMEFolder](/images/CNAMEFolder.png))
+![CNAME File in Source Folder](/images/CNAMEFolder.png))
 
-![CNAMEContent](/images/CNAMEContent.png))
+![CNAME Content](/images/CNAMEContent.png))

@@ -18,6 +18,7 @@ So at the top of my markdown document I could contain some metadata in YAML that
 ---
 title: 'YAML And Markdown Example'
 date: 2016-06-23
+categories: Markdown
 tags: ['Learning','YAML','Markdown']
 ---
 ```

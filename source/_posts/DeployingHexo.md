@@ -13,7 +13,7 @@ hexo generate
 ```
 This will deploy all the html files to the output path you designated in the config.yml file.
 
-![HexoGenerate](../images/HexoGenerate.png)
+![Hexo Generate Output](../images/HexoGenerate.png)
 
 ## Deploying Hexo
 
@@ -28,4 +28,4 @@ hexo deploy
 ```
 This will deploy and push the files to the github repo you specified in the config.yml file.
 
-![HexoDeploy](../images/HexoDeploy.png)
+![Hexo Deploy Output](../images/HexoDeploy.png)
