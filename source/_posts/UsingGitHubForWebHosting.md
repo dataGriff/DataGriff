@@ -11,6 +11,8 @@ tags: ['Starting Up','Blogging','GitHub', 'Web']
 
 To do this create a new github repository called [YourUserName]/[YourUserName].github.io.
 
+![My IO GitHub Repo](../images/GitHubIORepo.png)
+
 I used this for my blog and so the URL for the github repository above was what I used in my Hexo \_config.yml file in the deployment section.
 
 Once you have deployed to the github repository you can view the site using the URL [YourUserName].github.io.
