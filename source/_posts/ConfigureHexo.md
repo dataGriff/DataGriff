@@ -7,7 +7,7 @@ tags: ['Starting Up','Blogging','Hexo']
 
 ## Configuring Hexo using the config.yml file
 
-In the directory where you initalised hexo, you should see a file called config.yaml file. This is the file you edit to configure your hexo environment. At a bare minimum I did the following to get up and running quickly and efficiently.
+In the directory where you initalised hexo, you should see a file called config.yml file. This is the file you edit to configure your hexo environment. At a bare minimum I did the following to get up and running quickly and efficiently.
 
 I amended the site section at the top of the file to contain my and my site details.
 
