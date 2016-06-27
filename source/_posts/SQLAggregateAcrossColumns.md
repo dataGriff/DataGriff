@@ -29,7 +29,7 @@ SELECT
 FROM CTE;
 ```
 
-Outputs
+**Outputs**
 
 |MaxDate   |MinDate   |
 |---|---|
@@ -52,6 +52,7 @@ SELECT
   ,  (SELECT AVG(v) FROM (VALUES (NumA), (NumB), (NumC)) AS value(v)) as [AvgNum]
  FROM CTE;
 ```
+**Outputs**
 
 |SumNum   |AvgNum   |
 |---|---|
