@@ -15,7 +15,7 @@ This will deploy all the html files to the output path you designated in the \_c
 
 ![Hexo Generate Output](../images/HexoGenerate.png)
 
-In my case I'd configured the files to generate in a folder above the source folder called outputs (../Output was what I had in the \_config.yml file).
+In my case I'd configured the files to generate in a folder above the source folder called outputs (../Output was what I had in the \_config.yml file). The output folder should look something to below. 
 
 ![Hexo Output Files](../images/HexoOutputFiles.png)
 
