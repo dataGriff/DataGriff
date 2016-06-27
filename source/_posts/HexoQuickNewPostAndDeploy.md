@@ -13,15 +13,15 @@ In my case this is E:\\Documents\\Projects\\DataGriff\\Raw.
 
 ![Hexo Source Folder in Node.js Command Prompt](\images\HexoSourceFolder.png)
 
-Enter the command
+Enter the command:
 ```
 hexo new post test
 ```
 ![Hexo New Post Command in Node.js Command Prompt](\images\HexoNewPost.png)
 
-which will create a new post file called test.md. Don't close the node.js command prompt as you use it again at the end to deploy.
+This will create a new post file called test.md. Don't close the node.js command prompt as you use it again at the end to deploy.
 
-Start Git bash on your source folder and check the status by using
+Start Git bash on your source folder and check the status by using:
 ```
 git status
 ```
