@@ -1,6 +1,7 @@
 ---
 title: Configure Hexo
 date: 2016-06-27
+categories: Hexo
 tags: ['Starting Up','Blogging','Hexo']
 ---
 
