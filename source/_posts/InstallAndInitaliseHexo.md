@@ -5,7 +5,9 @@ categories: Hexo
 tags: ['Starting Up','Blogging','Hexo']
 ---
 
-Inspired by the awesome **[Pluralsight](https://www.pluralsight.com/ "Pluralsight")** and it's course on [static site generators](http://www.staticgen.com/ "Title"), I took the following steps to implement my blog.
+Inspired by the awesome **[Pluralsight](https://www.pluralsight.com/ "Pluralsight")** and it's course on [static site generators](http://www.staticgen.com/ "Title"), I decided to implement a blog using hexo.
+
+The steps shown below are what you need to install and initalise Hexo locally.
 
 ## Required Applications and Installations
 
@@ -41,6 +43,8 @@ There was a little message at the end of the command prompt output that stated
 INFO Start blogging with hexo
 ```
 So I thought I must be on the right track!
+
+![HexoStartBlogging](/images/HexoStartBlogging.png)))
 
 ## Viewing Hexos Startup Template
 In command prompt, in my dataGriff directory, I typed

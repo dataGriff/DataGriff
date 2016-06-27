@@ -15,7 +15,12 @@ This will deploy all the html files to the output path you designated in the con
 
 ## Deploying Hexo
 
-When in node.js command prompt, navigate to your source folder where you initialised hexo, and type
+I chose to use git for my hexo deployment so before you can use the hexo deploy command below, you first need to install this. To install git deployment, while in the hexo initalised folder, type the following command and press return.
+```
+npm install hexo-deployer-git --save
+```
+You also need to ensure that in your config.yml file that you have git specified as the deploy method and the name of your github io repository specified.
+To deploy then, when in node.js command prompt, navigate to your source folder where you initialised hexo, and type
 ```
 hexo deploy
 ```
