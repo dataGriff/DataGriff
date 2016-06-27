@@ -17,7 +17,7 @@ This will deploy all the html files to the output path you designated in the \_c
 
 In my case I'd configured the files to generate in a folder above the source folder called outputs (../Output was what I had in the \_config.yml file).
 
-![Hexo Generate Output](../images/HexoOutputFiles.png)
+![Hexo Output Files](../images/HexoOutputFiles.png)
 
 ## Deploying Hexo
 
