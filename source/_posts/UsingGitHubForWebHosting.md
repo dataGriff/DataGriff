@@ -1,6 +1,7 @@
 ---
 title: Using Git Hub for Web Hosting
 date: 2016-06-27
+categories: Github
 tags: ['Starting Up','Blogging','GitHub', 'Web']
 ---
 

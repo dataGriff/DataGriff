@@ -1,6 +1,7 @@
 ---
 title: Install and Initialise Hexo
 date: 2016-06-23
+categories: Hexo
 tags: ['Starting Up','Blogging','Hexo']
 ---
 

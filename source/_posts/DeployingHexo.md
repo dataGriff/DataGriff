@@ -1,6 +1,7 @@
 ---
 title: Deploying Hexo
 date: 2016-06-27
+categories: Hexo
 tags: ['Starting Up','Blogging','Hexo']
 ---
 
@@ -16,6 +17,6 @@ This will deploy all the html files to the output path you designated in the con
 
 When in node.js command prompt, navigate to your source folder where you initialised hexo, and type
 ```
-hexo deploy 
+hexo deploy
 ```
 This will deploy and push the files to the github repo you specified in the config.yml file.
