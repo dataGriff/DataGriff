@@ -1,5 +1,5 @@
 ---
-title: SQLAggregateAcrossColumns
+title: SQL Aggregate Across Columns
 date: 2016-06-27 17:54:53
 categories: SQL
 tags: ['SQL']
@@ -29,6 +29,14 @@ SELECT
 FROM CTE;
 ```
 
+Outputs
+
+|MaxDate   |MinDate   |
+|---|---|
+|2016-01-15   | 2016-01-01  |
+|2016-01-16   | 2016-01-04  |
+| 2016-01-10  | 2015-12-31  |
+
 ## Aggregate Numeric Across Columns Example
 
 ```sql
@@ -44,3 +52,9 @@ SELECT
   ,  (SELECT AVG(v) FROM (VALUES (NumA), (NumB), (NumC)) AS value(v)) as [AvgNum]
  FROM CTE;
 ```
+
+|SumNum   |AvgNum   |
+|---|---|
+|30   | 10  |
+|120   | 40  |
+| 150  | 50  |
