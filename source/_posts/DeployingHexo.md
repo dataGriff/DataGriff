@@ -15,6 +15,10 @@ This will deploy all the html files to the output path you designated in the \_c
 
 ![Hexo Generate Output](../images/HexoGenerate.png)
 
+In my case I'd configured the files to generate in a folder above the source folder called outputs (../Output was what I had in the \_config.yml file).
+
+![Hexo Generate Output](../images/HexoOutputFiles.png)
+
 ## Deploying Hexo
 
 I chose to use git for my hexo deployment so before you can use the hexo deploy command below, you first need to install this. To install git deployment, while in the hexo initalised folder, type the following command and press return.
