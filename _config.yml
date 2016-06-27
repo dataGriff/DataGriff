@@ -71,3 +71,8 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/griff182uk/griff182uk.github.io
+  
+# Search Add-In
+  search:
+  path: search.xml
+  field: post
