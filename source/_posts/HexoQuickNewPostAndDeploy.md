@@ -55,7 +55,7 @@ hexo generate
 ![Hexo Generate Command in Node.js](\images\HexoGenerate.png)
 Still in the node.js command prompt use the following command to deploy the output files to your github io repo and so your website.
 ```
-hexo generate
+hexo deploy
 ```
 ![Hexo Deploy Command in Node.js](\images\HexoDeploy.png)
 You should then be able to see the new post if you refresh the page.
