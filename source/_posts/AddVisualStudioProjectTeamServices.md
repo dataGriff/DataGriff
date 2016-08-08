@@ -1,5 +1,5 @@
 ---
-title: Add Visual Studio Project Team Services
+title: Add Visual Studio Project to Online Visual Studio Team Services
 date: 2016-08-07 15:43:15
 categories: Visual Studio
 tags: ['Source Control', 'Visual Studio', 'Git']
