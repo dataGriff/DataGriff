@@ -2,7 +2,7 @@
 title: Azure Create SQL Database
 date: 2016-09-05 19:41:51
 categories: Azure
-tags: ['Azure','SQL']
+tags: ['Azure','SQL','Starting Up']
 ---
 
 ## Azure Create SQL Database
@@ -57,23 +57,19 @@ Now that you are back to your configure database page after configuring your ser
 Once this is done, we can look at connecting in the next step!
 
 ### Connect to the SQL Database via SSMS
-In Azure go back to your homepage and pick SQL databases.
+In Azure go back to your homepage and pick SQL databases. You will see the list of your SQL databases. Pick the one you want to create a connection to (the one you just made).
 
 {% asset_img YourSQLDatabases.PNG Go to your SQL Databases %}
 
-You will see the list of your SQL databases. Pick the one you want to create a connection to (the one you just made).
-
-{% asset_img PickSQLDatabase.PNG Select your SQL Database %}
-
-Now you need to ensure that your local PC is going to be able to connect to your database so click the Set Server Firewall tab at the top
+Now you need to ensure that your local PC is going to be able to connect to your database so click the Set Server Firewall tab at the top in the database settings.
 
 {% asset_img SetServerFirewall.PNG Set Firewall %}
 
-Click add client IP
+Click add client IP.
 
 {% asset_img AddClientIP.PNG Add Client IP %}
 
-This will then save your IP address to allow connection
+This will then save your IP address to allow connection.
 
 {% asset_img SaveClient.PNG Saving your IP in Progress %}
 
