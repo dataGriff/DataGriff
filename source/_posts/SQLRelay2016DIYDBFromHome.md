@@ -1,31 +1,33 @@
 ---
-title: SQLRelay2016DIYDBFromHome
-categories: ZZ You left the category blank ZZ
-tags:
-  - ZZ You left the Tag blank
+title: SQL Relay 2016: Build a Database for free with Team Services Online, SSDT and Azure
+categories: Presentation
+tags: ['Presentation', 'SQL', 'Azure', 'SSDT', 'Team Services']
 date: 2016-10-02 15:06:37
 ---
 
-## Title of Post
+I am speaking again at SQL Relay this year and I decided to cover some of the basics. It was only about 18 months ago I had never used source control, never used any cloud services and it all seemed quite beyond me... But it's not!
+The aim of my talk this year is to hopefully speed up this process for people who find themselves in a similar situation that I was in and show all the free tools and resources that are available to you.
 
-Introduction
+{% asset_link SQLRelay2016DIYDBFromHomeSlideShow.html SQL Relay 2016 Presentation %}
 
-[Here's a link to google](www.google.com)
+## PreRequisites
 
-**What we're going to do:**
+The talk and demonstration use and require the following:
 
-* First part
-* Second part
-* Third part
+* [Git](https://git-scm.com/) & [Github Account](https://github.com/) - For Source Control
+* [Team Services Online Account](https://www.visualstudio.com/team-services/) - For Source Control and Work Management
+* [Visual Studio Community Edition](https://www.visualstudio.com/vs/community/) - For code development and infrastructure
+* [SQL Server Express](https://www.microsoft.com/en-gb/download/details.aspx?id=52679) - For code development and infrastructure
+* [Azure Account](https://azure.microsoft.com/en-gb/) - For infrastructure
+* [Notepad++](https://notepad-plus-plus.org/download/v6.9.2.html), [Atom](https://atom.io/) - These are both useful text editors
 
-### First part
+## Accompanying Youtube Videos
 
-{% asset_link SQLRelay2016DIYDBFromHomeSlideShow.html Presentation %}
+I've pushed the boat out with this years talk and decided to make myself a youtube channel and playlist to demonstrate the tools used.
+[SQL Relay 2016 Demos](https://www.youtube.com/playlist?list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2)
 
-### Second part
+## Accompanying Github Repository
 
-{% asset_img ExamplePicture02.png Example picture description 02 %}
-
-### Third part
-
-{% asset_img ExamplePicture03.png Example picture description 03 %}
+I've also created a more detail github code respository of the MyGymDB project which I hope to add to over time.
+This includes a ReadMe file with further details and instructions to implement the database yourself.
+[MyGymDB GitHub Repository](https://github.com/griff182uk/MyGymDB)

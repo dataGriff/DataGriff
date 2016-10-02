@@ -38,9 +38,6 @@ Build a Database for free with Team Services Online, SSDT and Azure
 
 ???
 
-        Setting up a SQL database using PaaS (Platform as a Service) in Microsoft Azure.
-        Part of the Cardiff SQL Relay Demo 2016, DIYDB from Home: Build a Database for free with Team Services Online, SSDT and Azure.
-
 ---
 
 # Overview
@@ -71,10 +68,10 @@ covering the whole lot.
 
 * Don't stress too much over this - anything can be stored in a database
 * If you're really stuck for time just steal a sample database from online
-        * Microsoft Adventureworks
-        * Microsoft World Wide Importers
-        * Stackoverflow
-        * Etc.. 
+	* [Microsoft Adventureworks](https://msftdbprodsamples.codeplex.com/releases/view/125550)
+	* [Microsoft World Wide Importers](https://msftdbprodsamples.codeplex.com/)
+	* [Stackoverflow](https://www.brentozar.com/archive/2015/10/how-to-download-the-stack-overflow-database-via-bittorrent/)
+	* Etc.. 
 * Or think of something that interests you that you know well
 * "Ooh me like exercise! I'll do a an exercise thingy" - Griff 2016
 * So today we're going to make a (very small) gym database
@@ -111,16 +108,15 @@ if you want to start with something really simple.
 
 # PreRequisite (Free!) Resources 
 
-This is what [today]("hello") is all about, showing you that you can use free
+This is what today is all about, showing you that you can use free
 tools from home to make a complete database service from home.
 
-* [Git](https://git-scm.com/) & [Github Account](https://github.com/)
-* [Team Services Online Account](https://www.visualstudio.com/team-services/)
-* [Visual Studio Community Edition](https://www.visualstudio.com/vs/community/)
-* [SQL Server Express](https://www.microsoft.com/en-gb/download/details.aspx?id=52679)
-* [Azure Account] (https://azure.microsoft.com/en-gb/)
-* [Notepad++](https://notepad-plus-plus.org/download/v6.9.2.html), [Atom] (https://atom.io/)
-
+* [Git](https://git-scm.com/) & [Github Account](https://github.com/) - For Source Control
+* [Team Services Online Account](https://www.visualstudio.com/team-services/) - For Source Control and Work Management
+* [Visual Studio Community Edition](https://www.visualstudio.com/vs/community/) - For code development and infrastructure
+* [SQL Server Express](https://www.microsoft.com/en-gb/download/details.aspx?id=52679) - For code development and infrastructure
+* [Azure Account](https://azure.microsoft.com/en-gb/) - For infrastructure
+* [Notepad++](https://notepad-plus-plus.org/download/v6.9.2.html), [Atom](https://atom.io/) - These are both useful text editors 
 ???
 
 * These are all the free tools you need to get going, so I recommend you get them! 
@@ -237,8 +233,9 @@ where you are you can pull your code down, work on it, then push it back.
 * PaaS - Azure provide the SQL platform and manage it completely for you
 * IaaS - Infrastructre as a Service
 * But we'll be using PaaS
-* Hint for Region Selection -  [Azure Speed Test](http://azurespeedtest.azurewebsites.net/)
-
+* **Hint for Region Selection -**  [Azure Speed Test](http://azurespeedtest.azurewebsites.net/)
+	* Pick the region with the lowest latency!
+	
 ???
 
 * SSDT provides its own build in localdb for visual studio that populates on build, 
@@ -317,16 +314,17 @@ very good for basic logic checking and test data samples.
 
 # Demo 
 
-* Create a database in SQL Azure [Demo Link]()
-* Set up Visual Studio Team Services Project [Demo Link]()
-* Add user story as work [Demo Link]()
-* Link project to visual studio [Demo Link]()
-* Develop objects [Demo Link]()
-* Populate object with data [Demo Link]()
-* Build and look at localdb in SSDT [Demo Link]()
-* Publish to Development (local express) [Demo Link]()
-* Check in your code and link with user story [Demo Link]()
-* Build and Publish to Production (Azure) [Demo Link]()
+* Create a database in SQL Azure [Demo Link](https://www.youtube.com/watch?v=dYht5jJOtAY&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=1&t=1s)
+* Set up Visual Studio Team Services Project [Demo Link](https://www.youtube.com/watch?v=SNMFOmGdnj4&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=2)
+* Add user story as work [Demo Link](https://www.youtube.com/watch?v=42306LF3ht8&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=3)
+* Add task to user story [Demo Link](https://www.youtube.com/watch?v=UwonTPDneag&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=4)
+* Link project to visual studio [Demo Link](https://www.youtube.com/watch?v=lbQf5tOVP24&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=5&t=1s)
+* Develop objects [Demo Link](https://www.youtube.com/watch?v=dQUdICt8ylo&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=6)
+* Check in Code [Demo Link](https://www.youtube.com/watch?v=Be3ZT8qxcwI&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=7)
+* Populate object with data [Demo Link](https://www.youtube.com/watch?v=GPurR4iQNPA&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=8)
+* Build and look at localdb in SSDT [Demo Link](https://www.youtube.com/watch?v=LySjzr9BreU&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=9)
+* Publish to Development (local express) [Demo Link](https://www.youtube.com/watch?v=chCGpFzUUrM&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=10)
+* Build and Publish to Production (Azure) [Demo Link](https://www.youtube.com/watch?v=ssrmOO8Gv-4&list=PLA5YLvtN7pNPqa77xX-g0K5roN93BOAS2&index=11)
 
 ???
 
@@ -370,7 +368,7 @@ KEY: All of these skills are transferable to the workplace.
 
 #Further Resources 
 
-* [MyGymDB Gihub Repository] - more in depth walkthrough of today
+* [MyGymDB Github Repository](https://github.com/griff182uk/MyGymDB) - more in depth walkthrough of today with extra code
 * [DataGriff.com](http://www.datagriff.com/)
 	* Look at categories and tags to find what you're after
 * Microsoft Documentation 
