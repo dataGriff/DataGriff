@@ -1,5 +1,5 @@
 ---
-title: SQL Relay 2016: Build a Database for free with Team Services Online, SSDT and Azure
+title: SQL Relay 2016 - Build a Database for free with Team Services Online, SSDT and Azure
 categories: Presentation
 tags: ['Presentation', 'SQL', 'Azure', 'SSDT', 'Team Services']
 date: 2016-10-02 15:06:37
@@ -8,11 +8,11 @@ date: 2016-10-02 15:06:37
 I am speaking again at SQL Relay this year and I decided to cover some of the basics. It was only about 18 months ago I had never used source control, never used any cloud services and it all seemed quite beyond me... But it's not!
 The aim of my talk this year is to hopefully speed up this process for people who find themselves in a similar situation that I was in and show all the free tools and resources that are available to you.
 
-{% asset_link SQLRelay2016DIYDBFromHomeSlideShow.html SQL Relay 2016 Presentation %}
+{% asset_link zSQLRelay2016DIYDBFromHomeSlideShow.html SQL Relay 2016 Presentation %}
 
 ## PreRequisites
 
-The talk and demonstration use and require the following:
+The demonstrations in the talk require the following:
 
 * [Git](https://git-scm.com/) & [Github Account](https://github.com/) - For Source Control
 * [Team Services Online Account](https://www.visualstudio.com/team-services/) - For Source Control and Work Management
