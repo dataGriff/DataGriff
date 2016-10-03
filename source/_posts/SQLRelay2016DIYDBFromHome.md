@@ -10,12 +10,20 @@ The aim of my talk this year is to hopefully speed up this process for people wh
 
 {% asset_link zSQLRelay2016DIYDBFromHomeSlideShow.html SQL Relay 2016 Presentation %}
 
+The presentation covers the basics of the following:
+* Database design
+* Work management
+* Source control
+* Infrastructure locally and in the cloud
+* Database Development
+* Deployment
+
 ## PreRequisites
 
 The demonstrations in the talk require the following:
 
-* [Git](https://git-scm.com/) & [Github Account](https://github.com/) - For Source Control
-* [Team Services Online Account](https://www.visualstudio.com/team-services/) - For Source Control and Work Management
+* [Git](https://git-scm.com/) & [Github Account](https://github.com/) - For source control
+* [Team Services Online Account](https://www.visualstudio.com/team-services/) - For source control and Work Management
 * [Visual Studio Community Edition](https://www.visualstudio.com/vs/community/) - For code development and infrastructure
 * [SQL Server Express](https://www.microsoft.com/en-gb/download/details.aspx?id=52679) - For code development and infrastructure
 * [Azure Account](https://azure.microsoft.com/en-gb/) - For infrastructure
