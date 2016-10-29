@@ -1,7 +1,7 @@
 ---
 title: SQL 2012 Admin Exam 01 Prepare Environment
-categories: SQL 2012
-tags: ['Exam', 'SQL', 'SQL Administration', 'Command-Line', 'Virtual Machines']
+categories: SQL Administration
+tags: ['Exam 70462', 'SQL', 'SQL Administration', 'Command-Line', 'Virtual Machines']
 date: 2016-10-23 13:07:01
 ---
 
@@ -64,6 +64,10 @@ hostname
 Renaming a machine.
 ```
 netdom renamecomputer %computername% /newname:DC
+```
+Join a machine to a network
+```
+netdom join ComputerName /domain:domainname.com
 ```
 Reboot a machine.
 ```
