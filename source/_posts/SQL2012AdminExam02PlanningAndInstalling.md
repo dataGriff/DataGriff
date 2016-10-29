@@ -5,8 +5,6 @@ tags: ['Exam 70462', 'SQL', 'SQL Administration']
 date: 2016-10-29 17:05:49
 ---
 
-**Introduction**
-
 So I'm on to the actual first chapter of the Administration book! Still a long way to go but here's what I learned...
 
 ### Key Terms
@@ -23,6 +21,7 @@ So I'm on to the actual first chapter of the Administration book! Still a long w
 ### Notes
 
 * Consider operating system, processor, RAM, hard disk, software and virtualization requirements.
+* In general think newer OS for more high spec SQL. 
 * 64-bit version of most SQL editions require 1.4Ghz minimum or recommended 2.0Ghz processor.
 * Minimum RAM is 1GB with recommend 4GB.
 * Express can do 512MB minimum ram with 1GB recommended.
@@ -31,7 +30,7 @@ So I'm on to the actual first chapter of the Administration book! Still a long w
 * SSIS can only run on servers.
 * Be careful when implementing the firewall allow program rule through, should use the % path and not direct drive letter e.g.
 **%ProgramFiles%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\sqlservr.exe**
-* You can see what features are installed on SQL Server instance using a [HTML summary report](https://blogs.msdn.microsoft.com/samlester/2013/06/13/sql-server-2012-discovery-report-determining-what-sql-server-components-are-installed/) which is dont via installation centre. 
+* You can see what features are installed on SQL Server instance using a [HTML summary report](https://blogs.msdn.microsoft.com/samlester/2013/06/13/sql-server-2012-discovery-report-determining-what-sql-server-components-are-installed/) which is dont via installation centre.
 * You can run SSIS in 32-bit mode on 64-bit machine if have SSDT installed.
 * Use Add/Remove programs to remove a feature.
 * Developer edition is good for developers as license is okay and same features as Enterprise.
