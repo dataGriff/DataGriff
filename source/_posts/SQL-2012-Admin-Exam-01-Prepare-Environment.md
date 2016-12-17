@@ -77,3 +77,7 @@ I don't think this did anything but may need it if get failed to configure DHCP 
 ```
 netsh int ip reset
 ```
+Force group policy update.
+```
+gpupdate /force
+```
