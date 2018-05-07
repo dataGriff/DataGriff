@@ -8,14 +8,14 @@ date: 2018-05-07 16:10:55
 The following post aims to give an good introduction and exercise around XML in SQL server. 
 
 ## Overview
-1. [What is XML? What is its structure? What is well-formed XML?](#1.0-what-is-xml)
-1. [Demonstrate some XQuery](#2.0-xquery)
-1. [Generate some test data for dogs entering kennels in a table](#3.0-generate-some-test-data-for-dogs-arriving-in-kennels-in-relational-format)
-1. [Show XML FOR functionality](#4.0-show-xml-for-option-functionality)
-1. [Create XML schema from Relational Table](#5.0-create-xml-schema-using-a-relational-table-structure)
-1. [Shows XML Schema Validation Works](#6.0-prove-create-xml-schema-works)
-1. [Import XML into SQL Table using MERGE](#7.0-import-data-from-xml-files-into-sql-table)
-1. [Create CSV from Row Data](#8.0-turning-rows-into-a-csv-group)
+1. [What is XML? What is its structure? What is well-formed XML?](#what-is-xml)
+1. [Demonstrate some XQuery](#xquery)
+1. [Generate some test data for dogs entering kennels in a table](#generate-some-test-data-for-dogs-arriving-in-kennels-in-relational-format)
+1. [Show XML FOR functionality](#show-xml-for-option-functionality)
+1. [Create XML schema from Relational Table](#create-xml-schema-using-a-relational-table-structure)
+1. [Shows XML Schema Validation Works](#prove-create-xml-schema-works)
+1. [Import XML into SQL Table using MERGE](#import-data-from-xml-files-into-sql-table)
+1. [Create CSV from Row Data](#create-csv-from-row-data)
 
 ## 0.0 Create Database and Schema 
 
@@ -40,7 +40,7 @@ EXEC sp_executesql @sql;
 END
 ```
 
-## 1.0 What is XML? 
+## What is XML? 
 XML stands for Extensible Markup Language. It's intent is a universal messaging langugage to describe data across
 multiple environments. It is hierarchical in nature with nodes represented as attributes or elements nested
 within one another.  
@@ -112,7 +112,7 @@ SELECT @xml;
 GO 
 ```
 
-## 2.0 XQuery 
+## XQuery 
 
 You can query XML directly using XQuery, there are four main functions:
 1.  **Query()** Obtain sections of XML you require
@@ -171,7 +171,7 @@ FROM @xml.nodes(N'//Kennel/*') Tab(Col);
 GO
 ```
 
-## 3.0 Generate some test data for Dogs arriving in Kennels in relational format
+## Generate some test data for Dogs arriving in Kennels in relational format
 
 Run the code below on your database so that we can use the table and data in later parts... 
 
@@ -209,7 +209,7 @@ VALUES ('Harvey','M',1,'German Shepherd','01-Oct-2014')
 GO
 ```
 
-## 4.0 Show XML FOR Option Functionality
+## Show XML FOR Option Functionality
 
 **4.1 XML RAW**
 The default for XML RAW is to create a single outer node with the name of row and generate the XML in an attribute-centric format (4.1.1).
@@ -323,7 +323,7 @@ SELECT @xml AS 'XMLPathParametersAndAliases';
 GO
 ```
 
-## 5.0 Create XML Schema using a Relational Table Structure
+## Create XML Schema using a Relational Table Structure
 
 You can create an XML schema from a relational table (created in part 3) by capturing the schema and then capturing it when creating a schema collection.
 
@@ -348,7 +348,7 @@ CREATE XML SCHEMA COLLECTION import.XMLDogKennelArrival AS @myschema;
 GO
 ```
 
-## 6.0 Prove Create XML Schema Works
+## Prove Create XML Schema Works
 
 The first part of the code below code creates a table using the XML schema created in part 5.
 It then inserts some XML data into the table column which fits the schema, and succeeds. 
@@ -470,7 +470,7 @@ SELECT @xml;
 GO
 ```
 
-## 7.0 Import Data from XML Files into SQL Table 
+## Import Data from XML Files into SQL Table 
 
 The following code shows examples of inserts, updates and deletes from XML files (see the [XMLImportFiles](https://github.com/griff182uk/XMLSQL/tree/master/XMLImportFiles) folder in repo) into SQL server. 
 **IMPORTANT NOTE:** For this section to work you must have the XMLImportFiles folder locally and the filepath needs to be correct for the XMLImportFiles in the OPENROWSET bit! See notes on each script where the filepath is. 
@@ -728,24 +728,24 @@ Execute the below to demonstrate the addition of a column to the XML data from f
 USE XMLDemo;
 GO 
 
-PRINT '6.5 Add Extra Field';
+PRINT '7.5 Add Extra Field';
 
-PRINT '6.5.1 Add Extra Column';
+PRINT '7.5.1 Add Extra Column';
 ALTER TABLE import.DogKennelArrival
 ADD DogColour VARCHAR(25) NOT NULL DEFAULT '';
 GO
 
-PRINT '6.5.2 Set Date Format and Declare XML Variable';
+PRINT '7.5.2 Set Date Format and Declare XML Variable';
 SET DATEFORMAT DMY;
 DECLARE @xml XML;
 
-PRINT '6.5.3 Use OPENROWSET to read XML file from filesystem'; 
+PRINT '7.5.3 Use OPENROWSET to read XML file from filesystem'; 
 SELECT @xml = BulkColumn
 FROM OPENROWSET(BULK '\XMLImportFiles\XML_Dog_ADDITEM.xml', SINGLE_BLOB) TempXML;
 
 --SELECT @xml; --Look at XML variable here for debugging if required
 
-PRINT '6.5.4 Generate CTE of XML Data in Relational Format Using Nodes Function';
+PRINT '7.5.4 Generate CTE of XML Data in Relational Format Using Nodes Function';
 --Note: added delete column';
 ;WITH CTE AS
 (
@@ -762,7 +762,7 @@ FROM @xml.nodes(N'//Kennel/*') Tab(Col)
 
 --SELECT * FROM CTE --Look at CTE output here for debugging if required
 
-PRINT '6.5.6 MERGE XML data from CTE into relational table';
+PRINT '7.5.6 MERGE XML data from CTE into relational table';
 MERGE INTO import.DogKennelArrival AS Tgt
 USING CTE AS Src ON
 src.Name = tgt.DogName
@@ -790,7 +790,7 @@ SELECT * FROM import.DogKennelArrival;
 GO
 ```
 
-## 8.0 Turning rows into a csv group
+## Create CSV from Row Data
 
 This is really useful for multiple instances per event, e.g. diagnosis or procedures per an admission).
 
