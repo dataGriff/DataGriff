@@ -1,15 +1,13 @@
 ---
-title: SQLServerXML
+title: SQL Server XML
 categories: SQL
 tags: ['SQL','XML']
 date: 2018-05-07 16:10:55
 ---
 
-# SQL Server XML
-
 ## Overview
 1. [What is XML? What is its structure? What is well-formed XML?](#1.0-What-is-XML)
-1. [Demonstrate some XQuery](2.0-XQuery )
+1. [Demonstrate some XQuery](#2.0-XQuery)
 1. [Generate some test data for dogs entering kennels in a table](#3.0-Generate-some-test-data-for-Dogs-arriving-in-Kennels-in-relational-format)
 1. [Show XML FOR functionality](#4.0-Show-XML-FOR-Option-Functionality)
 1. [Create XML schema from Relational Table](#5.0-Create-XML-Schema-using-a-Relational-Table-Structure)
@@ -839,7 +837,7 @@ FROM cte
 OPTION (MAXRECURSION 0);  
 GO 
 
-PRINT '8.3.2 Va va voom!';
+PRINT '8.3.2 See Rows get turned to CSV Very Quickly!';
 ;WITH CTE AS
 (
 SELECT n AS AdmissionID, Diagnosis FROM #tally
