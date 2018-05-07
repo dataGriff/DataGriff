@@ -6,14 +6,14 @@ date: 2018-05-07 16:10:55
 ---
 
 ## Overview
-1. [What is XML? What is its structure? What is well-formed XML?](#1.0-What-is-XML)
-1. [Demonstrate some XQuery](#2.0-XQuery)
-1. [Generate some test data for dogs entering kennels in a table](#3.0-Generate-some-test-data-for-Dogs-arriving-in-Kennels-in-relational-format)
-1. [Show XML FOR functionality](#4.0-Show-XML-FOR-Option-Functionality)
-1. [Create XML schema from Relational Table](#5.0-Create-XML-Schema-using-a-Relational-Table-Structure)
-1. [Shows XML Schema Validation Works](#6.0-Prove-Create-XML-Schema-Works)
-1. [Import XML into SQL Table using MERGE](#7.0-Import-Data-from-XML-Files-into-SQL-Table)
-1. [Create CSV from Row Data](#8.0-Turning-rows-into-a-csv-group)
+1. [What is XML? What is its structure? What is well-formed XML?](##1.0-What-is-XML)
+1. [Demonstrate some XQuery](##2.0-XQuery)
+1. [Generate some test data for dogs entering kennels in a table](##3.0-Generate-some-test-data-for-Dogs-arriving-in-Kennels-in-relational-format)
+1. [Show XML FOR functionality](##4.0-Show-XML-FOR-Option-Functionality)
+1. [Create XML schema from Relational Table](##5.0-Create-XML-Schema-using-a-Relational-Table-Structure)
+1. [Shows XML Schema Validation Works](##6.0-Prove-Create-XML-Schema-Works)
+1. [Import XML into SQL Table using MERGE](##7.0-Import-Data-from-XML-Files-into-SQL-Table)
+1. [Create CSV from Row Data](##8.0-Turning-rows-into-a-csv-group)
 
 ## 0.0 Create Database and Schema 
 
